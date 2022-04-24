@@ -22,7 +22,7 @@ function add(e){
             'amount': amount.value,
             'category':category.value,
             'description':description.value,
-            'id':`${Object.keys(localStorage).length + 1}`
+            'id':`${Math.max(...Object.keys(localStorage))+ 1}`
         } 
         
         const li=document.createElement('li')

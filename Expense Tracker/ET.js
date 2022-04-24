@@ -26,7 +26,7 @@ function add(e){
         } 
         
         const li=document.createElement('li')
-        li.innerText=(`${amount.value} : ${category.value} : ${description.value} `);
+        li.innerText=(`${amount.value} : ${category.value} : ${description.value}  `);
         const dltbtn=document.createElement('button');
         dltbtn.class='dlt';
         dltbtn.id=`${obj.id}`
@@ -60,7 +60,7 @@ function addToLS(obj){
     keys.forEach((key)=>{
         const eachkey=JSON.parse(localStorage.getItem(key));
         const li=document.createElement('li')
-        li.innerText=(`${eachkey.amount} : ${eachkey.category} : ${eachkey.description} `);
+        li.innerText=(`${eachkey.amount} : ${eachkey.category} : ${eachkey.description}  `);
         const dltbtn=document.createElement('button');
         dltbtn.class='dlt';
         dltbtn.id=`${eachkey.id}`;
